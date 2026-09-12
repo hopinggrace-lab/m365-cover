@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive viewport -->
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    >
+
+    <meta
+        name="description"
+        content="We're updating our terms"
+    >
+
+    <title>Outlook — We're updating our terms</title>
+
+    <style>
+        /* =========================================================
+           RESET
+        ========================================================= */
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        html {
+            width: 100%;
+            min-height: 100%;
+            margin: 0;
+            padding: 0;
+            -webkit-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+        }
+
+        body {
+            width: 100%;
+            min-height: 100vh;
+            min-height: 100dvh;
+
+            margin: 0;
+            padding: 0;
+
+            background: #ffffff;
+
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            color: #444444;
+
+            overflow-x: hidden;
+
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 0;
+        }
+
+        a {
+            -webkit-tap-highlight-color: transparent;
+        }
+
+
+        /* =========================================================
+           PAGE
+        ========================================================= */
+
+        .page {
+            width: 100%;
+            min-height: 100vh;
+            min-height: 100dvh;
+
+            display: flex;
+            flex-direction: column;
+
+            background: #ffffff;
+        }
+
+
+        /* =========================================================
+           MAIN CONTENT
+        ========================================================= */
+
+        .content {
+            width: 100%;
+            max-width: 1216px;
+
+            margin: 0 auto;
+
+            text-align: center;
+
+            flex: 1 0 auto;
+        }
+
+
+        /* =========================================================
+           LOGO SECTION
+        ========================================================= */
+
+        .logo-section {
+            width: 100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding-top: clamp(55px, 13.5vw, 165px);
+            padding-right: 20px;
+            padding-bottom: clamp(45px, 6.4vw, 78px);
+            padding-left: 20px;
+        }
+
+
+        .outlook-logo {
+            width: auto;
+            max-width: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            gap: clamp(10px, 1.5vw, 18px);
+        }
+
+
+        /* =========================================================
+           OUTLOOK ICON  (CHANGED — now a raster <img> instead of
+           CSS-built shapes; same envelope concept, new style)
+        ========================================================= */
+
+        .logo-icon {
+            position: relative;
+
+            width: clamp(105px, 13.8vw, 168px);
+            height: clamp(105px, 13.8vw, 168px);
+
+            flex: 0 0 auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .logo-image {
+            width: 100%;
+            height: 100%;
+
+            object-fit: contain;
+
+            display: block;
+        }
+
+
+        /* =========================================================
+           OUTLOOK TEXT
+        ========================================================= */
+
+        .outlook-text {
+            color: #2879bd;
+
+            font-size:
+                clamp(
+                    34px,
+                    4.8vw,
+                    58px
+                );
+
+            line-height: 1;
+
+            font-weight: 400;
+
+            letter-spacing:
+                clamp(
+                    -1px,
+                    -0.15vw,
+                    -2px
+                );
+
+            white-space: nowrap;
+        }
+
+
+        /* =========================================================
+           DIVIDERS
+        ========================================================= */
+
+        .divider {
+            width: 100%;
+
+            height: 1px;
+
+            background: #d2d2d2;
+        }
+
+
+        /* =========================================================
+           HEADING
+        ========================================================= */
+
+        .heading {
+            width: 100%;
+
+            padding:
+                clamp(10px, 1.1vw, 13px)
+                20px
+                clamp(9px, 1vw, 12px);
+
+            color: #444444;
+
+            font-size:
+                clamp(
+                    17px,
+                    2vw,
+                    24px
+                );
+
+            line-height: 1.25;
+
+            font-weight: 700;
+
+            text-align: center;
+        }
+
+
+        /* =========================================================
+           BUTTON SECTION
+        ========================================================= */
+
+        .button-section {
+            width: 100%;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            padding-top:
+                clamp(
+                    42px,
+                    5.6vw,
+                    68px
+                );
+
+            padding-right: 20px;
+            padding-bottom: 50px;
+            padding-left: 20px;
+        }
+
+
+        /* =========================================================
+           BUTTON
+        ========================================================= */
+
+        .click-button {
+            display: inline-flex;
+
+            align-items: center;
+            justify-content: center;
+
+            width: min(
+                355px,
+                90vw
+            );
+
+            min-height: 76px;
+
+            padding:
+                14px
+                28px;
+
+            border:
+                2px solid #111111;
+
+            border-radius: 999px;
+
+            background:
+                linear-gradient(
+                    to bottom,
+                    #3b3b3b 0%,
+                    #111111 45%,
+                    #000000 100%
+                );
+
+            color: #ffffff;
+
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            font-size:
+                clamp(
+                    25px,
+                    3.2vw,
+                    39px
+                );
+
+            line-height: 1;
+
+            font-weight: 700;
+
+            text-decoration: none;
+
+            text-align: center;
+
+            box-shadow:
+                inset 0 2px 3px
+                rgba(255, 255, 255, 0.25),
+
+                0 5px 4px
+                rgba(0, 0, 0, 0.15);
+
+            cursor: pointer;
+
+            /*
+             * Prevents accidental text selection
+             * when used as a button.
+             */
+            user-select: none;
+            -webkit-user-select: none;
+
+            /*
+             * Makes tapping comfortable on phones.
+             */
+            touch-action: manipulation;
+
+            transition:
+                transform 0.15s ease,
+                box-shadow 0.15s ease;
+        }
+
+
+        .click-button:hover {
+            background:
+                linear-gradient(
+                    to bottom,
+                    #4a4a4a 0%,
+                    #111111 50%,
+                    #000000 100%
+                );
+
+            transform: translateY(-1px);
+
+            box-shadow:
+                inset 0 2px 3px
+                rgba(255, 255, 255, 0.25),
+
+                0 6px 5px
+                rgba(0, 0, 0, 0.18);
+        }
+
+
+        .click-button:active {
+            transform: translateY(1px);
+
+            box-shadow:
+                inset 0 2px 4px
+                rgba(0, 0, 0, 0.4);
+        }
+
+
+        .click-button:focus-visible {
+            outline:
+                3px solid
+                #2879bd;
+
+            outline-offset: 4px;
+        }
+
+
+        /* =========================================================
+           CURSOR
+        ========================================================= */
+
+        .cursor {
+            display: inline-block;
+
+            margin-left:
+                clamp(6px, 1vw, 10px);
+
+            font-size:
+                clamp(
+                    25px,
+                    3.1vw,
+                    38px
+                );
+
+            line-height: 1;
+
+            transform: rotate(-10deg);
+        }
+
+
+        /* =========================================================
+           BUTTON SHADOW
+        ========================================================= */
+
+        .button-shadow {
+            width:
+                min(
+                    340px,
+                    80vw
+                );
+
+            height: 12px;
+
+            margin-top: 5px;
+
+            border-radius: 50%;
+
+            background:
+                rgba(0, 0, 0, 0.15);
+
+            filter: blur(3px);
+        }
+
+
+        /* =========================================================
+           LARGE TABLETS
+        ========================================================= */
+
+        @media (max-width: 900px) {
+
+            .logo-section {
+                padding-top: 90px;
+                padding-bottom: 55px;
+            }
+
+            .outlook-logo {
+                gap: 12px;
+            }
+
+            .button-section {
+                padding-top: 55px;
+            }
+        }
+
+
+        /* =========================================================
+           TABLETS
+        ========================================================= */
+
+        @media (max-width: 700px) {
+
+            .logo-section {
+                padding-top: 70px;
+                padding-bottom: 45px;
+            }
+
+            .outlook-logo {
+                gap: 9px;
+            }
+
+            .button-section {
+                padding-top: 48px;
+            }
+
+            .click-button {
+                min-height: 68px;
+            }
+        }
+
+
+        /* =========================================================
+           PHONES
+        ========================================================= */
+
+        @media (max-width: 480px) {
+
+            .logo-section {
+                padding-top: 58px;
+                padding-right: 15px;
+                padding-bottom: 38px;
+                padding-left: 15px;
+            }
+
+            .outlook-logo {
+                gap: 7px;
+            }
+
+            .logo-icon {
+                width: 105px;
+                height: 105px;
+            }
+
+            .outlook-text {
+                font-size: 34px;
+            }
+
+            .heading {
+                padding-right: 15px;
+                padding-left: 15px;
+
+                font-size: 18px;
+            }
+
+            .button-section {
+                padding-top: 42px;
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+
+            .click-button {
+                width: 92vw;
+                max-width: 355px;
+
+                min-height: 64px;
+
+                padding:
+                    13px
+                    20px;
+
+                font-size: 27px;
+            }
+
+            .button-shadow {
+                width: 80vw;
+                max-width: 320px;
+            }
+        }
+
+
+        /* =========================================================
+           SMALL PHONES
+        ========================================================= */
+
+        @media (max-width: 360px) {
+
+            .logo-section {
+                padding-top: 45px;
+                padding-bottom: 32px;
+            }
+
+            .logo-icon {
+                width: 88px;
+                height: 88px;
+            }
+
+            .outlook-text {
+                font-size: 29px;
+            }
+
+            .heading {
+                font-size: 17px;
+            }
+
+            .click-button {
+                width: 94vw;
+                min-height: 60px;
+
+                font-size: 24px;
+            }
+
+            .button-shadow {
+                width: 80vw;
+            }
+        }
+
+
+        /* =========================================================
+           VERY SMALL / NARROW SCREENS
+        ========================================================= */
+
+        @media (max-width: 300px) {
+
+            .outlook-logo {
+                flex-direction: column;
+            }
+
+            .logo-icon {
+                width: 100px;
+                height: 100px;
+            }
+
+            .outlook-text {
+                font-size: 30px;
+            }
+
+            .click-button {
+                font-size: 22px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+
+
+        /* =========================================================
+           LANDSCAPE PHONES
+        ========================================================= */
+
+        @media
+        screen
+        and (max-height: 500px)
+        and (orientation: landscape) {
+
+            .logo-section {
+                padding-top: 30px;
+                padding-bottom: 25px;
+            }
+
+            .logo-icon {
+                width: 90px;
+                height: 90px;
+            }
+
+            .outlook-text {
+                font-size: 30px;
+            }
+
+            .button-section {
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+
+            .click-button {
+                min-height: 58px;
+            }
+        }
+
+
+        /* =========================================================
+           REDUCED MOTION
+        ========================================================= */
+
+        @media (prefers-reduced-motion: reduce) {
+
+            *,
+            *::before,
+            *::after {
+                scroll-behavior: auto !important;
+                transition: none !important;
+                animation: none !important;
+            }
+        }
+
+
+        /* =========================================================
+           PRINT
+        ========================================================= */
+
+        @media print {
+
+            body {
+                background: #ffffff;
+            }
+
+            .click-button {
+                color: #000000;
+                background: #ffffff;
+                box-shadow: none;
+                border: 1px solid #000000;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+<div class="page">
+
+    <main class="content">
+
+        <!-- =====================================================
+             OUTLOOK LOGO  (CHANGED — image style only)
+        ====================================================== -->
+
+        <section class="logo-section">
+
+            <div class="outlook-logo">
+
+                <div class="logo-icon">
+
+                    <img
+                        class="logo-image"
+                        src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polygon points='8,21 62,8 62,92 8,79' fill='%232879bd'/><text x='19' y='68' font-family='Arial' font-size='44' font-weight='700' fill='%23ffffff'>O</text><rect x='52' y='32' width='40' height='48' fill='%23ffffff' stroke='%232879bd' stroke-width='4'/><line x1='53' y1='33' x2='72' y2='56' stroke='%232879bd' stroke-width='4'/><line x1='91' y1='33' x2='72' y2='56' stroke='%232879bd' stroke-width='4'/></svg>"
+                        alt="Outlook logo"
+                        aria-label="Outlook"
+                    />
+
+                </div>
+
+                <div class="outlook-text">
+                    Outlook
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             FIRST DIVIDER
+        ====================================================== -->
+
+        <div class="divider"></div>
+
+
+        <!-- =====================================================
+             HEADING
+        ====================================================== -->
+
+        <div class="heading">
+            We’re updating our terms
+        </div>
+
+
+        <!-- =====================================================
+             SECOND DIVIDER
+        ====================================================== -->
+
+        <div class="divider"></div>
+
+
+        <!-- =====================================================
+             BUTTON
+        ====================================================== -->
+
+        <section class="button-section">
+
+            <a
+                class="click-button"
+                href="https://00-m-365.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Click here"
+            >
+                <span>Click Here</span>
+                <span class="cursor" aria-hidden="true">↖</span>
+            </a>
+
+            <div
+                class="button-shadow"
+                aria-hidden="true"
+            ></div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
